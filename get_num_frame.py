@@ -15,9 +15,6 @@ parser.add_option("-c", "--cms_file", dest="cms_file", type="string", help="inpu
 parser.add_option("-t", "--desmond_trajectory", dest="trj", type="string", help="trajectory path")
 
 (options, args) = parser.parse_args()
-ene_data = open(options.ene_file, "r").readlines()
-traj_data = {}
 
-mical_time_of_frame
 dsim = create_simulation(options.cms_file, options.trj)
-print dsim.total_frame
+print "Total number of frames: ", dsim.total_frame
